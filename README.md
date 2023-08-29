@@ -168,7 +168,7 @@ Sie können diese Fenster immer über **'Ansicht/...'** öffnen.
 <img src="./AddFiles/Ansicht-öffnen.png" width=50% >
 
 ### Visual Studio Starten
-<img src="./AddFiles/Bearbeiten.PNG" width=50% >
+<img src="./AddFiles/Bearbeitet.PNG" width=50% >
 
 ### Visual Studio Starten
 <img src="./AddFiles/commit-lokal.png" width=50% >
