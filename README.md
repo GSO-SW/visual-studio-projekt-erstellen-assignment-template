@@ -250,14 +250,15 @@ Führen Sie die folgenden Schritte aus, um eine Änderung im Browser vorzunehmen
 
 1. Gehen Sie in Ihrem Browser zu Ihrem Repository **GrundlagenrepositoryCsharp** und navigieren Sie zum Verzeichnis **2_Konsolenausgabe**.
 2. Ersetzen Sie die Codezeile:
-   ```csharp
-   Console.WriteLine("Fubar");
-   ```
-   durch
+
+```csharp
+Console.WriteLine("Fubar");
+```
+durch
    
-        ```csharp
-        Console.WriteLine("foobar");
-        ```
+```csharp
+Console.WriteLine("foobar");
+```
 Vergessen Sie nicht, Ihre Änderung zu committen.
 
 <img src="./AddFiles/browser-commit.png" width=50% >
