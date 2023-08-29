@@ -28,27 +28,27 @@ Dieser Auftrag hat folgende Ziele:
 > + Sie müssen die Formatierung im Beispiel genau befolgen, um den Unittest zu bestehen
 
 
-<img src="./AddFiles/Suchleiste-windows.png" width=50% >
-<img src="./AddFiles/startbildschirm.png" width=50% >
+<img src="./AddFiles/Suchleiste-windows.PNG" width=50% >
+<img src="./AddFiles/startbildschirm.PNG" width=50% >
 <img src="./AddFiles/Datei-Kontoeinstellungen.png" width=50% >
-<img src="./AddFiles/Anmelden-Microsoft.png" width=50% >
+<img src="./AddFiles/Anmelden-Microsoft.PNG" width=50% >
 <img src="./AddFiles/Anmeldeoption.png" width=50% >
 <img src="./AddFiles/GitHub-Anmeldung.png" width=50% >
-<img src="./AddFiles/Angemeldet.png" width=50% >
+<img src="./AddFiles/Angemeldet.PNG" width=50% >
 <img src="./AddFiles/Neues-Projekt.png" width=50% >
-<img src="./AddFiles/Neues-Konsolenprojekt.png" width=50% >
-<img src="./AddFiles/Projektnamen-festlegen.png" width=50% >
-<img src="./AddFiles/Framework.png" width=50% >
+<img src="./AddFiles/Neues-Konsolenprojekt.PNG" width=50% >
+<img src="./AddFiles/Projektnamen-festlegen.PNG" width=50% >
+<img src="./AddFiles/Framework.PNG" width=50% >
 <img src="./AddFiles/Debuggen.png" width=50% >
-<img src="./AddFiles/Projektmappe.png" width=50% >
+<img src="./AddFiles/Projektmappe.PNG" width=50% >
 <img src="./AddFiles/Neues-Projekt-hinzu.png" width=50% >
-<img src="./AddFiles/Zweiter-Projektname.png" width=50% >
-<img src="./AddFiles/Änderung-zweites-Projekt.png" width=50% >
+<img src="./AddFiles/Zweiter-Projektname.PNG" width=50% >
+<img src="./AddFiles/Änderung-zweites-Projekt.PNG" width=50% >
 <img src="./AddFiles/AlsStartprojekt-festlegen.png" width=50% >
 <img src="./AddFiles/Quellcodeverwaltung-hinzufügen.png" width=50% >
 <img src="./AddFiles/repo-veröffentlichen.png" width=50% >
 <img src="./AddFiles/Ansicht-öffnen.png" width=50% >
-<img src="./AddFiles/Bearbeiten.png" width=50% >
+<img src="./AddFiles/Bearbeiten.PNG" width=50% >
 <img src="./AddFiles/commit-lokal.png" width=50% >
 <img src="./AddFiles/erster-push.png" width=50% >
 <img src="./AddFiles/browser-commit.png" width=50% >
