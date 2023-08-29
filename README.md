@@ -138,7 +138,7 @@ In Visual Studio können Sie mehrere Projekte innerhalb einer einzigen **Projekt
 
 Nach Abschluss dieser Schritte ist das neue Projekt Ihrer bestehenden Projektmappe hinzugefügt und Sie können mit der Entwicklung innerhalb dieses neuen Projektes beginnen.
 
-### Projekt zum Starten auswählen und ausführen
+## Projekt zum Starten auswählen und ausführen
 
 In einer **Projektmappe** mit mehreren Projekten in Visual Studio können Sie ein bestimmtes Projekt als Startprojekt festlegen. Das bedeutet, dass dieses Projekt beim Starten des Debuggers automatisch ausgeführt wird. Im Folgenden wird erläutert, wie Sie das Startprojekt ändern und überprüfen können, welche Ausgabe es erzeugt:
 
@@ -168,45 +168,45 @@ In einer **Projektmappe** mit mehreren Projekten in Visual Studio können Sie ei
 
 Indem Sie das Startprojekt wechseln, können Sie sicherstellen, dass Sie immer das richtige Projekt in Ihrer Projektmappe ausführen und testen.
 
-### Zur Quellcodeverwaltung hinzufügen
+### Ihr Projekt mit GitHub verbinden
 
-Damit Ihr Projekt auch von den Vorteilen der Quellcodeverwaltung profitieren kann und mit Ihrem GitHub konto verbunden ist, 
-muss es initialisiert werden. 
+Um sicherzustellen, dass Ihr Projekt von einer Versionskontrolle profitiert, ist es wichtig, es mit einem System wie GitHub zu verbinden. Dies ermöglicht es Ihnen, Änderungen nachzuverfolgen, mit anderen zusammenzuarbeiten und den Code sicher in der Cloud zu speichern.
 
-hierfür klicken Sie auf **"Zur Quellcodeverwaltung hinzufügen"** und anschließend auf Git.
-
-
+1. **Initialisierung der Quellcodeverwaltung**:
+    - Klicken Sie in Visual Studio auf die Schaltfläche **"Zur Quellcodeverwaltung hinzufügen"**.
+    - Wählen Sie im daraufhin angezeigten Menü **"Git"** aus.
 
 <img src="./AddFiles/Quellcodeverwaltung-hinzufügen.png" width=50% >
 
+2. **Einige wichtige Einstellungen**:
+    - Visual Studio bietet bereits einige vordefinierte Einstellungen. Überprüfen Sie die folgenden Punkte und passen Sie sie bei Bedarf an:
 
-Visual Studio hat schon einige Einstellungen für Sie Vorgenommen. 
-Sie müssen nun noch folgende Punkte Prüfen 
+        - **README.md hinzufügen**: Eine `README.md`-Datei bietet allgemeine Informationen über Ihr Projekt und ist oft der erste Anhaltspunkt für andere Entwickler oder Nutzer, um zu verstehen, was Ihr Projekt macht und wie man es benutzt.
 
-1. README.md hinzufgen. Das ist eine Datei die...
-2. Wählen Sie welches über welches Konto Sie das Repository erstellen möchten
-3. Wählen Sie wem das Repository gehört in diesem Fall soll es ihrem persönlichen Profil sein. Da Sie teil der GSO-Organisation sind, können sie den Besitz auch auf sie...
-4. Beschreiben Sie klurz was in dem Repository steckt
-5. Laden Sie das Repository hoch.
+        - **Konto auswählen**: Stellen Sie sicher, dass Sie das richtige Konto auswählen, über das Sie das Repository erstellen möchten.
 
-Das Repository ist nun **"Privat"** nur Sie können es sehen. Sie können in den GitHub Einstellungen im Browser diese Einstellung später ändern.
+        - **Repository-Besitzer auswählen**: Wählen Sie, wem das Repository gehört. Wenn Sie Teil der GSO-Organisation sind, haben Sie die Möglichkeit, das Repository entweder Ihrem persönlichen Profil oder der Organisation zuzuweisen.
 
+        - **Beschreibung hinzufügen**: Geben Sie eine kurze Beschreibung an, die den Inhalt und den Zweck des Repositories klar macht.
 
-
-Schauen Sie sich nun Ihr Repository in Ihrem persönlichen Profil bei GitHub an.
-
+        - **Repository veröffentlichen**: Dieser Schritt erstellt das Repository auf GitHub. Beachten Sie, dass das Repository standardmäßig als **"Privat"** eingestellt ist, sodass nur Sie darauf Zugriff haben. Diese Einstellungen können später auf der GitHub-Website angepasst werden.
 
 
 <img src="./AddFiles/repo-veröffentlichen.png" width=50% >
 
-### Commit und Push
+3. **Überprüfung auf GitHub**:
+    - Nachdem Sie das Repository veröffentlicht haben, können Sie es direkt auf GitHub überprüfen. Melden Sie sich bei Ihrem GitHub-Konto an und navigieren Sie zu Ihrem persönlichen Profil. Hier sollte das neu erstellte Repository erscheinen.
 
-Bei der Arbeit mit Visual Studio und Github werden Sie zwei Fenster besonders heufig brauchen
+    Mit diesen Schritten haben Sie Ihr Projekt erfolgreich in ein Git-Repository umgewandelt und dieses Repository auf GitHub veröffentlicht. Sie sind nun bereit, die Vorteile der Versionskontrolle und der Zusammenarbeit über GitHub zu nutzen.
 
-- Projektmappenexplorer
-- Git-Änderungen
+### Synchronisation Ihrer lokalen Änderungen mit GitHub
 
-Sie können diese Fenster immer über **'Ansicht/...'** öffnen. 
+Das Konzept von Git basiert auf der Trennung von lokalen und entfernten Repositories. Wenn Sie Änderungen in Ihrem lokalen Repository vornehmen, werden diese nicht automatisch auf das entfernte Repository (in diesem Fall auf GitHub) übertragen. Um diese Synchronisation durchzuführen, müssen Sie Ihre Änderungen "commiten" und dann "pushen".
+
+1. **Fenster im Blick behalten**:
+   - Es gibt zwei Hauptfenster in Visual Studio, die Sie beim Arbeiten mit Git oft nutzen werden:
+      - Projektmappenexplorer: Zeigt die Struktur Ihrer Projekte.
+      - Git-Änderungen: Zeigt alle Änderungen in Ihrem lokalen Repository.
 
 <img src="./AddFiles/Ansicht-öffnen.png" width=50% >
 
@@ -220,88 +220,93 @@ Console.WriteLine("Hallo Welt");
 
 <img src="./AddFiles/Bearbeitet.png" width=50% >
 
-Nun klicken Sie in der Registerkarte auf
+### Änderungen committen:
 
-1. Git-Änderungen
-2. Fügen Sie in die Commit-Box eine Beschreibung hinzu was Sie geändert haben. Nutzen Sie verben
-3. Commiten Sie Ihre Änderungen.
+1. Klicken Sie auf die **"Git-Änderungen"-Registerkarte**.
+2. Beschreiben Sie kurz und präzise, was Sie geändert haben. Eine gute Praxis ist es, aktive Verben zu verwenden (z.B. "hinzugefügt", "geändert").
+3. Klicken Sie auf den **Commit-Button**, um Ihre Änderungen zu speichern.
 
-Nun Können Sie im Browser schauen ob Ihre Änderung online zu sehen ist.
 
 <img src="./AddFiles/commit-lokal.png" width=50% >
 
-Wie Sie sicherlich gemerkt haben ist die zusätzliche Zeile nicht zu sehen. 
-Das liegt daran...
+### Warum ist meine Änderung nicht auf GitHub?:
 
-Sie können Ihren Commit auf den Server pushen indem Sie den Button mit dem Pfeil nach oben anklicken. 
-Hinweis:
-Die 1 neben den Commits steht für ein commit der noch nicht gepsht wurde. 
+Wenn Sie nach Ihrem Commit auf GitHub schauen, werden Sie feststellen, dass Ihre Änderungen noch nicht dort erscheinen. Das liegt daran, dass Commits zuerst lokal gespeichert werden. Um diese Änderungen auf das entfernte Repository zu übertragen, müssen Sie sie "pushen".
 
-Nachdem Sie ihren Code gepusht haben können kontrollieren on er im Browser zu sehen ist. 
+### Pushen Sie Ihre Änderungen:
+
+1. Klicken Sie auf den **Pfeil-nach-oben-Button**, um Ihre Änderungen zu pushen. Die kleine Zahl neben dem Button zeigt an, wie viele Commits Sie seit dem letzten Push gemacht haben.
+2. Nachdem der Push abgeschlossen ist, können Sie erneut auf GitHub nachsehen. Ihre Änderungen sollten jetzt im entfernten Repository sichtbar sein.
 
 <img src="./AddFiles/erster-push.png" width=50% >
 
+Durch diesen Prozess stellen Sie sicher, dass alle Ihre Änderungen sicher auf GitHub gespeichert sind und Sie oder andere Entwickler darauf von überall aus zugreifen können.
+
 ### Fetch und Pull
 
-Es kann natürlich auch sein das sie Änderungen online im Browser machen oder ein Teamkollege seine Änderungen über einen PullRequest auf den Server geladen hat. 
-Um diesen Code auf ihrem Lokalen zuladen, müssen sie den Code abrufen.
+Während der Arbeit in einem Team oder durch Änderungen direkt im Browser kann es passieren, dass Änderungen am Code auf GitHub vorgenommen werden, die Sie noch nicht lokal auf Ihrem Rechner haben. Um diese Änderungen zu erhalten, müssen Sie diese zunächst "fetchen" und anschließend "pullen".
 
-Gehen Sie im Browser zu Ihrem Repository GrundlagenrepositoryCsharp und zum Verzeichnis 2_Konsolenausgabe, 
-Änderns Sie den Code folgendermaßen
+Führen Sie die folgenden Schritte aus, um eine Änderung im Browser vorzunehmen:
 
-Entfernen Sie 
-```csharp
-Console.WriteLine("Fubar");
-```
-
-
-mit folgender Codezeile
-```csharp
-Console.WriteLine("foobar");
-```
-Vergessen Sie nicht den Code zu Commiten. 
+1. Gehen Sie in Ihrem Browser zu Ihrem Repository **GrundlagenrepositoryCsharp** und navigieren Sie zum Verzeichnis **2_Konsolenausgabe**.
+2. Ersetzen Sie die Codezeile:
+   ```csharp
+   Console.WriteLine("Fubar");
+   ```
+   durch
+   
+        ```csharp
+        Console.WriteLine("foobar");
+        ```
+Vergessen Sie nicht, Ihre Änderung zu committen.
 
 <img src="./AddFiles/browser-commit.png" width=50% >
 
-Um die Änderungen abzurfen öffnen Sie wieder die Registerkarte Git-Änderungen
+### Um die im Browser gemachten Änderungen lokal zu erhalten:
 
-1. Um die Daten Abzurufen, klicken sie den **gestrichelten** Pfeil nach **unten**
-2. Es wird Ihnen nun eine Änderung angezeigt die auf dem Server vorgenommen wurde. Denken Sie daran noch ist diese Änderungen bei Ihnen Lokal noch nicht übernommen
-3. Under dem Register Eingehend finden Sie den eingehenden Commit
-4. Klicken Sie die Datei an in der der Commit gemacht würde
-5. Schauen Sie sich die Änderung an
-6. Um die Änderung zui übernehmen, klicken Sie auf den Pfeil nach **unten**
+1. Öffnen Sie in Visual Studio die Registerkarte **Git-Änderungen**.
+2. Klicken Sie auf den gestrichelten Pfeil nach unten, um die Daten abzurufen.
+3. Visual Studio zeigt nun eine Änderung an, die online gemacht wurde. Beachten Sie: Diese Änderung ist lokal noch nicht übernommen!
+4. Im Register "Eingehend" finden Sie den entsprechenden Commit.
+5. Klicken Sie auf die Datei, in der der Commit gemacht wurde, um die Änderungen zu überprüfen.
+6. Um die Änderung lokal zu übernehmen, klicken Sie erneut auf den Pfeil nach unten.
 
-Schaeune Sie ob die Änderung lokal auf ihren Computer übernommen wurde.
+Überprüfen Sie abschließend, ob die Änderung auch lokal auf Ihrem Rechner übernommen wurde.
 
 <img src="./AddFiles/fetch-pull.png" width=50% >
 
-### Repository klonen
+## Repository klonen
 
-Die Speicherung auf dem Server hat viele Gründe. Einige davon sind die Sicherung und der Daten.
+Ein Hauptgrund für die Speicherung von Code auf einem Server, wie z.B. GitHub, ist die Sicherung der Daten. Dies erlaubt es Ihnen und anderen, jederzeit auf den Code zuzugreifen und ihn zu verwenden, selbst wenn er lokal gelöscht wurde.
 
-Schließen Sie nun Visual Studio vollständig.
-Gehen Sie zu dem Ordner in dem Sie das Repository **"GrundlagenrepositoryCsharp"** gespeichert haben. 
+Befolgen Sie die folgenden Schritte, um zu erfahren, wie Sie ein gelöschtes Repository wiederherstellen können:
 
-Löschen Sie das Repository von ihrem Computer.
+1. **Lokales Repository löschen:**
+    - Schließen Sie Visual Studio.
+    - Navigieren Sie zu dem Ordner, in dem Sie das **"GrundlagenrepositoryCsharp"** gespeichert haben.
+    - Löschen Sie dieses Repository.
 
 <img src="./AddFiles/Repository-löschen.png" width=50% >
 
-Öffnen Sie das Repoitory im Browser indem Sie ihre Repositorys aufrufen. 
-Clicken Sie auf das **"GrundlagenrepositoryCsharp"** und anschließend auf **'Code'**.
-Copieren Sie die HTTPS URL.
+2. **HTTPS-URL des Repositories kopieren:**
+    - Öffnen Sie Ihren Browser und navigieren Sie zu Ihrem GitHub-Profil.
+    - Klicken Sie auf das Repository **"GrundlagenrepositoryCsharp"**.
+    - Klicken Sie auf den **'Code'**-Button und kopieren Sie die HTTPS-URL.
 
 <img src="./AddFiles/url-klonen.png" width=50% >
 
-Starten Sie erneut Visual Studio auf ihrem Computer
-Fahren Sie wie zu Anfang ohne Code fort. 
-Unter dem Reiter Datei können auf Repository-klonen klicken
+3. **Repository mit Visual Studio klonen:**
+    - Starten Sie Visual Studio.
+    - Gehen Sie zu `Datei` und klicken Sie auf `Repository klonen`.
+    
 
 <img src="./AddFiles/repo-klonen.png" width=50% >
 
-Fügen Sie die URL nun in das obere Feld ein und klicken Sie Klonen
+    - Fügen Sie die kopierte URL in das obere Feld ein.
+    - Klicken Sie auf den `Klonen`-Button.
+
 
 <img src="./AddFiles/klonen.png" width=50% >
 
-Nun ist das Repository wieder Auf Ihrem Computer und kann lokal verwendet werden.
+Ihr Repository ist nun wieder auf Ihrem Computer und kann lokal bearbeitet werden.
 
