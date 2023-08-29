@@ -116,35 +116,57 @@ Der **Debugger** ist ein essentielles Tool für Entwickler. Er ermöglicht es, d
 
 Nach dem Starten des Debuggers wird Ihr Code im Debug-Modus ausgeführt. Sie können den Verlauf des Programms verfolgen, Haltepunkte setzen und den Wert von Variablen während der Laufzeit beobachten. Dies ist besonders nützlich, um das korrekte Verhalten des Codes zu überprüfen und mögliche Fehler oder Unstimmigkeiten zu identifizieren.
 
-### Neues Projekt hinzufügen
+### Neues Projekt in bestehende Projektmappe hinzufügen
 
-Um ein neues Projekt hinzuzufügen klicken Sie die lilane Projektmappe mit der rechten Maustase an.
+In Visual Studio können Sie mehrere Projekte innerhalb einer einzigen **Projektmappe** organisieren. Dies ermöglicht es, mehrere miteinander verbundene Projekte zentral zu verwalten. Hier zeigen wir Ihnen, wie Sie ein neues Projekt zu einer bereits existierenden Projektmappe hinzufügen:
+
+1. **Projektmappe im Solution Explorer auswählen**: 
+    - Klicken Sie im Solution Explorer auf die lilafarbene Projektmappe, die Ihr Hauptprojekt enthält.
 
 <img src="./AddFiles/Projektmappe.PNG" width=50% >
 
-Fügen Sie ein neue Projekt hinzu.
+2. **Kontextmenü öffnen und neues Projekt hinzufügen**:
+    - Klicken Sie mit der rechten Maustaste auf die ausgewählte Projektmappe und wählen Sie die Option, ein neues Projekt hinzuzufügen.
 
 <img src="./AddFiles/Neues-Projekt-hinzu.png" width=50% >
 
-Geben Sie dem Projekt den Namen **"2_Konsolenausgabe"** und wählen Sie das .NET 6 Framework.
+3. **Projekteigenschaften festlegen**:
+    - Geben Sie dem neuen Projekt den Namen **"2_Konsolenausgabe"**.
+    - Achten Sie darauf, dass Sie das **.NET 6 Framework** als Zielplattform auswählen, um die Kompatibilität und Konsistenz zwischen Ihren Projekten sicherzustellen.
 
 <img src="./AddFiles/Zweiter-Projektname.PNG" width=50% >
 
-### Projekt wechseln
+Nach Abschluss dieser Schritte ist das neue Projekt Ihrer bestehenden Projektmappe hinzugefügt und Sie können mit der Entwicklung innerhalb dieses neuen Projektes beginnen.
 
-Ändern Sie die den Text in der neuen Program.cs von ```Hello World`` in ``Fubar``. 
+### Projekt zum Starten auswählen und ausführen
 
-Starten Sie den Debugger und schauen was ausgegeben wird.
+In einer **Projektmappe** mit mehreren Projekten in Visual Studio können Sie ein bestimmtes Projekt als Startprojekt festlegen. Das bedeutet, dass dieses Projekt beim Starten des Debuggers automatisch ausgeführt wird. Im Folgenden wird erläutert, wie Sie das Startprojekt ändern und überprüfen können, welche Ausgabe es erzeugt:
 
-
+1. **Ändern des Quellcodes**:
+    - Öffnen Sie die Datei `Program.cs` im neu hinzugefügten Projekt.
+    - Ersetzen Sie den Text `Hello World` durch `Fubar`.
+    - Speichern Sie die Datei.
 
 <img src="./AddFiles/Änderung-zweites-Projekt.PNG" width=50% >
 
 
-Klicken Sie mit der rechten Maustaste auf das neue Projekt und legen sie dieses als neues Startprojekt fest.
+2. **Projekt ausführen und Ausgabe überprüfen**:
+    - Starten Sie den Debugger, um die Ausgabe des aktuellen Startprojekts zu überprüfen.
+    - Sie sollten die Ausgabe `Fubar` im Konsolenfenster sehen, wenn das aktuelle Startprojekt das neu hinzugefügte Projekt ist.
+
+3. **Startprojekt ändern**:
+    - Wenn Sie die Ausgabe von `Hello World` statt `Fubar` sehen, bedeutet dies, dass das ursprüngliche Projekt immer noch als Startprojekt festgelegt ist.
+    - Um das neu hinzugefügte Projekt als Startprojekt festzulegen, klicken Sie mit der rechten Maustaste auf den Projektnamen im Solution Explorer.
+    - Wählen Sie "Als Startprojekt festlegen" aus dem Kontextmenü.
 
 
 <img src="./AddFiles/AlsStartprojekt-festlegen.png" width=50% >
+
+4. **Erneutes Überprüfen der Ausgabe**:
+    - Starten Sie den Debugger erneut.
+    - Diesmal sollte die Ausgabe `Fubar` im Konsolenfenster angezeigt werden, da das neu hinzugefügte Projekt nun als Startprojekt festgelegt ist.
+
+Indem Sie das Startprojekt wechseln, können Sie sicherstellen, dass Sie immer das richtige Projekt in Ihrer Projektmappe ausführen und testen.
 
 ### Zur Quellcodeverwaltung hinzufügen
 
