@@ -222,17 +222,43 @@ Vergessen Sie nicht den Code zu Commiten.
 
 Um die Änderungen abzurfen öffnen Sie wieder die Registerkarte Git-Änderungen
 
+1. Um die Daten Abzurufen, klicken sie den **gestrichelten** Pfeil nach **unten**
+2. Es wird Ihnen nun eine Änderung angezeigt die auf dem Server vorgenommen wurde. Denken Sie daran noch ist diese Änderungen bei Ihnen Lokal noch nicht übernommen
+3. Under dem Register Eingehend finden Sie den eingehenden Commit
+4. Klicken Sie die Datei an in der der Commit gemacht würde
+5. Schauen Sie sich die Änderung an
+6. Um die Änderung zui übernehmen, klicken Sie auf den Pfeil nach **unten**
+
+Schaeune Sie ob die Änderung lokal auf ihren Computer übernommen wurde.
+
 <img src="./AddFiles/fetch-pull.png" width=50% >
 
-### Visual Studio Starten
+### Repository klonen
+
+Die Speicherung auf dem Server hat viele Gründe. Einige davon sind die Sicherung und der Daten.
+
+Schließen Sie nun Visual Studio vollständig.
+Gehen Sie zu dem Ordner in dem Sie das Repository **"GrundlagenrepositoryCsharp"** gespeichert haben. 
+
+Löschen Sie das Repository von ihrem Computer.
+
 <img src="./AddFiles/Repository-löschen.png" width=50% >
 
-### Visual Studio Starten
+Öffnen Sie das Repoitory im Browser indem Sie ihre Repositorys aufrufen. 
+Clicken Sie auf das **"GrundlagenrepositoryCsharp"** und anschließend auf **'Code'**.
+Copieren Sie die HTTPS URL.
+
 <img src="./AddFiles/url-klonen.png" width=50% >
 
-### Visual Studio Starten
+Starten Sie erneut Visual Studio auf ihrem Computer
+Fahren Sie wie zu Anfang ohne Code fort. 
+Unter dem Reiter Datei können auf Repository-klonen klicken
+
 <img src="./AddFiles/repo-klonen.png" width=50% >
 
-### Visual Studio Starten
+Fügen Sie die URL nun in das obere Feld ein und klicken Sie Klonen
+
 <img src="./AddFiles/klonen.png" width=50% >
+
+Nun ist das Repository wieder Auf Ihrem Computer und kann lokal verwendet werden.
 
