@@ -115,9 +115,15 @@ Geben Sie dem Projekt den Namen **"2_Konsolenausgabe"** und wählen Sie das .NET
 
 Starten Sie den Debugger und schauen was ausgegeben wird.
 
-Klicken Sie mit der rechten Maustaste auf das neue Projekt und legen sie dieses als neues Startprojekt fest.
+
 
 <img src="./AddFiles/Änderung-zweites-Projekt.PNG" width=50% >
+
+
+Klicken Sie mit der rechten Maustaste auf das neue Projekt und legen sie dieses als neues Startprojekt fest.
+
+
+<img src="./AddFiles/AlsStartprojekt-festlegen.png" width=50% >
 
 ### Zur Quellcodeverwaltung hinzufügen
 
@@ -127,7 +133,9 @@ muss es initialisiert werden.
 hierfür klicken Sie auf **"Zur Quellcodeverwaltung hinzufügen"** und anschließend auf Git.
 
 
-<img src="./AddFiles/AlsStartprojekt-festlegen.png" width=50% >
+
+<img src="./AddFiles/Quellcodeverwaltung-hinzufügen.png" width=50% >
+
 
 Visual Studio hat schon einige Einstellungen für Sie Vorgenommen. 
 Sie müssen nun noch folgende Punkte Prüfen 
@@ -140,13 +148,15 @@ Sie müssen nun noch folgende Punkte Prüfen
 
 Das Repository ist nun **"Privat"** nur Sie können es sehen. Sie können in den GitHub Einstellungen im Browser diese Einstellung später ändern.
 
-<img src="./AddFiles/Quellcodeverwaltung-hinzufügen.png" width=50% >
 
 
 Schauen Sie sich nun Ihr Repository in Ihrem persönlichen Profil bei GitHub an.
 
-### Commit und Push
 
+
+<img src="./AddFiles/repo-veröffentlichen.png" width=50% >
+
+### Commit und Push
 
 Bei der Arbeit mit Visual Studio und Github werden Sie zwei Fenster besonders heufig brauchen
 
@@ -155,9 +165,6 @@ Bei der Arbeit mit Visual Studio und Github werden Sie zwei Fenster besonders he
 
 Sie können diese Fenster immer über **'Ansicht/...'** öffnen. 
 
-<img src="./AddFiles/repo-veröffentlichen.png" width=50% >
-
-### Visual Studio Starten
 <img src="./AddFiles/Ansicht-öffnen.png" width=50% >
 
 ### Visual Studio Starten
