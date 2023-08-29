@@ -28,60 +28,133 @@ Dieser Auftrag hat folgende Ziele:
 ### Visual Studio Starten
 
 windows suchleiste nach Visual studio 22 suchen und anclicken. 
+
 <img src="./AddFiles/Suchleiste-windows.PNG" width=50% >
 
-### Visual Studio Starten
+Wenn sich ein Popup offnet, klicken Sie auf "one Code fortfahren"
+
 <img src="./AddFiles/startbildschirm.PNG" width=50% >
 
-### Visual Studio Starten
+### Kontoeinstellungen vornehmen
+Unter Datei/Kontoeinstellungen können Sie sich mit Ihrem Account Anmelden.
+
 <img src="./AddFiles/Datei-Kontoeinstellungen.png" width=50% >
 
-### Visual Studio Starten
+Klicken Sie auf anmelden und melden Sie sich mit Ihrer Schulemail in ihrem Microsoft konto an. 
+
+
+
 <img src="./AddFiles/Anmelden-Microsoft.PNG" width=50% >
 
-### Visual Studio Starten
+sollte dies nicht funtionieren, ändern Sie die den Browser zum Systembrowser unter Kontooptionen.
+
+
 <img src="./AddFiles/Anmeldeoption.png" width=50% >
 
-### Visual Studio Starten
+Sie können müssen nun noch Ihr GitHub Konto hinzufügen. 
+Klicken Sie dafür auf **"Hinzufügen"** und w#hlen Sie GitHub aus.
+
+
 <img src="./AddFiles/GitHub-Anmeldung.png" width=50% >
 
-### Visual Studio Starten
+
+Wenn sie mit beiden Profilen erfolgreich angemeldet sind, sieht das folgendermaßen aus.
+
+
 <img src="./AddFiles/Angemeldet.PNG" width=50% >
 
-### Visual Studio Starten
+### Neue Projektmappe erstellen
+
+Nun erstellen sie ein Konsolenprogramm das mit der Programmiersprache c# programmiert wird. 
+Einkonsolenprogramm ist ein Programm das...
+
+Klicken Sie auf Datei/Neu/Projekt
+
 <img src="./AddFiles/Neues-Projekt.png" width=50% >
 
-### Visual Studio Starten
+
+Suchen Sie in der Suchleiste die Konsolen.App. 
+Achten Sie darauf, dass c# die gewählte Programmiersprache ist.
+
 <img src="./AddFiles/Neues-Konsolenprojekt.PNG" width=50% >
 
-### Visual Studio Starten
+Konfigurieren Sie das Projekt so, das der Name der Projektmappe **"GrundlagenrepositoryCsharp"** (Erstes Feld) und das erste Projekt **"1_Elementare_Syntax"** (zweites Feld) ist. 
+Die Repositorys werden meist im source Ordner des Benutzers gespeichert. 
+Platzieren Sie die Projektmappe **nicht** im selben Verzeichnis wie das Projekt. 
+
 <img src="./AddFiles/Projektnamen-festlegen.PNG" width=50% >
 
-### Visual Studio Starten
+
+Wählen Sie die Framework-version .NEt 6 aus.
+
 <img src="./AddFiles/Framework.PNG" width=50% >
 
-### Visual Studio Starten
+### Projekt starten
+
+Um den Debugger zu starten, drücken Sie **F5** oder klicken Sie auf den grünen Pfeil.
+
 <img src="./AddFiles/Debuggen.png" width=50% >
 
-### Visual Studio Starten
+### Neues Projekt hinzufügen
+
+Um ein neues Projekt hinzuzufügen klicken Sie die lilane Projektmappe mit der rechten Maustase an.
+
 <img src="./AddFiles/Projektmappe.PNG" width=50% >
 
-### Visual Studio Starten
+Fügen Sie ein neue Projekt hinzu.
+
 <img src="./AddFiles/Neues-Projekt-hinzu.png" width=50% >
 
-### Visual Studio Starten
+Geben Sie dem Projekt den Namen **"2_Konsolenausgabe"** und wählen Sie das .NET 6 Framework.
+
 <img src="./AddFiles/Zweiter-Projektname.PNG" width=50% >
 
-### Visual Studio Starten
+### Projekt wechseln
+
+Ändern Sie die den Text in der neuen Program.cs von ```Hello World`` in ``Fubar``. 
+
+Starten Sie den Debugger und schauen was ausgegeben wird.
+
+Klicken Sie mit der rechten Maustaste auf das neue Projekt und legen sie dieses als neues Startprojekt fest.
+
 <img src="./AddFiles/Änderung-zweites-Projekt.PNG" width=50% >
 
-### Visual Studio Starten
+### Zur Quellcodeverwaltung hinzufügen
+
+Damit Ihr Projekt auch von den Vorteilen der Quellcodeverwaltung profitieren kann und mit Ihrem GitHub konto verbunden ist, 
+muss es initialisiert werden. 
+
+hierfür klicken Sie auf **"Zur Quellcodeverwaltung hinzufügen"** und anschließend auf Git.
+
+
 <img src="./AddFiles/AlsStartprojekt-festlegen.png" width=50% >
 
-### Visual Studio Starten
+Visual Studio hat schon einige Einstellungen für Sie Vorgenommen. 
+Sie müssen nun noch folgende Punkte Prüfen 
+
+1. README.md hinzufgen. Das ist eine Datei die...
+2. Wählen Sie welches über welches Konto Sie das Repository erstellen möchten
+3. Wählen Sie wem das Repository gehört in diesem Fall soll es ihrem persönlichen Profil sein. Da Sie teil der GSO-Organisation sind, können sie den Besitz auch auf sie...
+4. Beschreiben Sie klurz was in dem Repository steckt
+5. Laden Sie das Repository hoch.
+
+Das Repository ist nun **"Privat"** nur Sie können es sehen. Sie können in den GitHub Einstellungen im Browser diese Einstellung später ändern.
+
 <img src="./AddFiles/Quellcodeverwaltung-hinzufügen.png" width=50% >
 
-### Visual Studio Starten
+
+Schauen Sie sich nun Ihr Repository in Ihrem persönlichen Profil bei GitHub an.
+
+### Commit und Push
+
+
+Bei der Arbeit mit Visual Studio und Github werden Sie zwei Fenster besonders heufig brauchen
+
+- Projektmappenexplorer
+- Git-Änderungen
+
+Sie können diese Fenster immer über **'Ansicht/...'** öffnen. 
+
 <img src="./AddFiles/repo-veröffentlichen.png" width=50% >
 
 ### Visual Studio Starten
