@@ -1,99 +1,120 @@
-<div id="container" style="white-space:nowrap">
 
-  <div id="image" style="display:inline float: right;">
-        <img style="float: left;" src="./AddFiles/C%23_logo.png" alt="drawing" width="8%"/>
-  </div>
 
-  <div id="texts" style="display:inline; white-space:nowrap; float: right;"> 
-        <h1>C#-Grundlagen</h1>
-        <h3>Arbeitsauftrag zur Konsolenausgabe</h3>
+<div id="texts" style="display:inline; white-space:nowrap; float: right;"> 
+        <h1>Visual Studio mit Git und GitHub</h1>
 </div>
 
 ## :dart: Zielsetzung
 
-Dieser Auftrag hat folgende Ziele:
+### 1. Verständnis für die Entwicklungsumgebung
+- Die Lernenden können **Visual Studio 2022** erfolgreich installieren, starten und die wichtigsten Funktionen der IDE identifizieren.
 
-+ Einfache Programmierprobleme nutzen, um die Modul 1 behandelten Themen zu Vertiefen
-+ Üben Informationen zu Recherchieren, die nicht explizit in der Aufgabenstellung genannt werden
-+ Üben Sie das Erstellen, Klonen und Einreichen von Aufträgen über Visual Studio 2022 und GitHub
+### 2. Anwendung von Versionierungssystemen
+- Die Lernenden sind in der Lage, ein Projekt in Visual Studio zu erstellen und dieses mit einem Git-Repository zu verbinden.
+- Sie verstehen die Bedeutung von Commits und können diese in Visual Studio durchführen.
+
+### 3. Zusammenarbeit mit GitHub
+- Die Lernenden können sich mit ihren Konten in Visual Studio anmelden.
+- Sie können ein neues Repository auf GitHub erstellen, Änderungen pushen und ziehen (fetch und pull).
+- Sie verstehen den Unterschied zwischen diesen Aktionen.
+
+### 4. Arbeiten mit C#-Projekten
+- Die Lernenden sind in der Lage, ein neues C#-Konsolenprojekt in Visual Studio zu erstellen.
+- Sie können bestehende Projekte bearbeiten und verschiedene Projekte innerhalb einer Lösung verwalten.
+
+
+## Einleitung
+
+Die Integration von Visual Studio mit GitHub hat die Entwicklung und Zusammenarbeit von Software erheblich vereinfacht. In diesem Tutorial werden Sie durch den Prozess der Erstellung eines Projekts in Visual Studio 2022 geführt, seiner Verbindung mit einem GitHub-Repository und der Durchführung der grundlegenden Git-Operationen, die im Softwareentwicklungszyklus häufig verwendet werden. Nachdem Sie diesen Leitfaden befolgt haben, werden Sie über das notwendige Wissen verfügen, um Ihren Code effizient zu verwalten, Änderungen zu verfolgen und mit anderen Entwicklern zusammenzuarbeiten.
 
 ---
 
-### Aufgabe 1: Der Geist
-> :information_source: **Hinweise**:exclamation:
-> + Beachten Sie, dass Sie die Ausgabe unter der gestrichelten Linie erzeugen müssen, um die Aufgabe zu bestehen
-> + Sie müssen die Formatierung im Beispiel genau befolgen, um den Unittest zu bestehen
 
+## Visual Studio Starten
 
-### Visual Studio Starten
+Um Visual Studio 2022 zu starten, folgen Sie diesen einfachen Schritten:
 
-windows suchleiste nach Visual studio 22 suchen und anclicken. 
+1. Öffnen Sie die Windows-Suchleiste und geben Sie "Visual Studio 2022" ein.
 
 <img src="./AddFiles/Suchleiste-windows.PNG" width=50% >
 
-Wenn sich ein Popup offnet, klicken Sie auf "one Code fortfahren"
+2. Wählen Sie das entsprechende Suchergebnis aus, indem Sie darauf klicken.
+
+3. Sollte ein Popup-Fenster erscheinen, klicken Sie auf **"ohne Code fortfahren"**.
 
 <img src="./AddFiles/startbildschirm.PNG" width=50% >
 
-### Kontoeinstellungen vornehmen
-Unter Datei/Kontoeinstellungen können Sie sich mit Ihrem Account Anmelden.
+## Kontoeinstellungen in Visual Studio 2022
+
+Bevor Sie mit der Arbeit in Visual Studio 2022 beginnen, ist es wichtig, Ihr **Microsoft-Konto** und Ihr **GitHub-Konto** zu verknüpfen. Ein Microsoft-Konto ermöglicht Ihnen den Zugriff auf verschiedene Dienste von Microsoft und sichert Ihre Einstellungen in der Cloud. Ein GitHub-Konto wird benötigt, wenn Sie Ihre Projekte versionieren und online auf GitHub speichern möchten.
+
+### 1. **Account anmelden**
+
+- Navigieren Sie im Menü zu `Datei` > `Kontoeinstellungen`.
 
 <img src="./AddFiles/Datei-Kontoeinstellungen.png" width=50% >
 
-Klicken Sie auf anmelden und melden Sie sich mit Ihrer Schulemail in ihrem Microsoft konto an. 
-
-
+- Klicken Sie auf **"Anmelden"** und geben Sie Ihre Schul-E-Mail-Adresse ein, um sich bei Ihrem **Microsoft-Konto** anzumelden.
 
 <img src="./AddFiles/Anmelden-Microsoft.PNG" width=50% >
 
-sollte dies nicht funtionieren, ändern Sie die den Browser zum Systembrowser unter Kontooptionen.
+> **Hinweis**: Sollten Probleme bei der Anmeldung auftreten, wechseln Sie den Standardbrowser in den `Kontooptionen`.
 
 
 <img src="./AddFiles/Anmeldeoption.png" width=50% >
 
-Sie können müssen nun noch Ihr GitHub Konto hinzufügen. 
-Klicken Sie dafür auf **"Hinzufügen"** und w#hlen Sie GitHub aus.
+### 2. **GitHub Konto hinzufügen**
+
+- Nachdem Sie sich mit Ihrem Microsoft-Konto angemeldet haben, fügen Sie Ihr **GitHub-Konto** hinzu.
+- Klicken Sie hierfür auf **"Hinzufügen"** und wählen Sie GitHub aus der Liste aus.
 
 
 <img src="./AddFiles/GitHub-Anmeldung.png" width=50% >
 
 
-Wenn sie mit beiden Profilen erfolgreich angemeldet sind, sieht das folgendermaßen aus.
+Nach erfolgreicher Anmeldung mit beiden Konten sollte Ihr Anmeldebildschirm wie folgt aussehen:
 
 
 <img src="./AddFiles/Angemeldet.PNG" width=50% >
 
-### Neue Projektmappe erstellen
+## Neue Projektmappe in Visual Studio 2022 erstellen
 
-Nun erstellen sie ein Konsolenprogramm das mit der Programmiersprache c# programmiert wird. 
-Einkonsolenprogramm ist ein Programm das...
+In diesem Abschnitt werden Sie lernen, wie Sie eine neue Projektmappe für ein Konsolenprogramm erstellen, das in der Programmiersprache **C#** geschrieben wird. Ein **Konsolenprogramm** ist eine Art von Anwendung, die in einem Konsolenfenster (auch bekannt als Befehlszeilenfenster) ausgeführt wird. Es besitzt keine grafische Benutzeroberfläche (GUI), stattdessen interagiert es mit dem Benutzer durch Texteingaben und -ausgaben.
 
-Klicken Sie auf Datei/Neu/Projekt
+### 1. **Projekt erstellen**
+
+- Navigieren Sie im Menü zu `Datei` > `Neu` > `Projekt`.
 
 <img src="./AddFiles/Neues-Projekt.png" width=50% >
 
-
-Suchen Sie in der Suchleiste die Konsolen.App. 
-Achten Sie darauf, dass c# die gewählte Programmiersprache ist.
+- Geben Sie in die Suchleiste `Konsolen.App` ein und stellen Sie sicher, dass **C#** als gewählte Programmiersprache eingestellt ist.
 
 <img src="./AddFiles/Neues-Konsolenprojekt.PNG" width=50% >
 
-Konfigurieren Sie das Projekt so, das der Name der Projektmappe **"GrundlagenrepositoryCsharp"** (Erstes Feld) und das erste Projekt **"1_Elementare_Syntax"** (zweites Feld) ist. 
-Die Repositorys werden meist im source Ordner des Benutzers gespeichert. 
-Platzieren Sie die Projektmappe **nicht** im selben Verzeichnis wie das Projekt. 
+### 2. **Projekt konfigurieren**
+
+- Benennen Sie die Projektmappe im ersten Feld als **"GrundlagenrepositoryCsharp"** und das darin enthaltene Projekt als **"1_Elementare_Syntax"** im zweiten Feld.
+- Es ist eine gängige Praxis, Repositorys im `source` Ordner des Benutzers zu speichern. Achten Sie darauf, die Projektmappe **nicht** im selben Verzeichnis wie das Projekt zu platzieren.
 
 <img src="./AddFiles/Projektnamen-festlegen.PNG" width=50% >
 
-
-Wählen Sie die Framework-version .NEt 6 aus.
+- Für dieses Tutorial wählen Sie die Framework-Version **.NET 6**.
 
 <img src="./AddFiles/Framework.PNG" width=50% >
 
-### Projekt starten
+Im Anschluss daran wird Visual Studio das Projekt initialisieren und Ihnen eine Übersicht über die erstellten Dateien und den Quellcode anzeigen.
 
-Um den Debugger zu starten, drücken Sie **F5** oder klicken Sie auf den grünen Pfeil.
+## Projekt debuggen in Visual Studio 2022
+
+Der **Debugger** ist ein essentielles Tool für Entwickler. Er ermöglicht es, den Programmcode Schritt für Schritt auszuführen, den Zustand von Variablen zu überwachen, Haltepunkte zu setzen und viele andere Aufgaben durchzuführen, die bei der Fehleridentifikation und -behebung helfen. Das Debuggen hilft dabei, das Verhalten und die Abläufe im Code besser zu verstehen, und ist daher ein unerlässliches Werkzeug bei der Softwareentwicklung.
+
+### Debugger starten
+
+- Um den Debugger zu starten, drücken Sie **F5** auf Ihrer Tastatur oder klicken Sie auf den grünen Pfeil in der Menüleiste.
 
 <img src="./AddFiles/Debuggen.png" width=50% >
+
+Nach dem Starten des Debuggers wird Ihr Code im Debug-Modus ausgeführt. Sie können den Verlauf des Programms verfolgen, Haltepunkte setzen und den Wert von Variablen während der Laufzeit beobachten. Dies ist besonders nützlich, um das korrekte Verhalten des Codes zu überprüfen und mögliche Fehler oder Unstimmigkeiten zu identifizieren.
 
 ### Neues Projekt hinzufügen
 
