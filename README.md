@@ -167,19 +167,61 @@ Sie können diese Fenster immer über **'Ansicht/...'** öffnen.
 
 <img src="./AddFiles/Ansicht-öffnen.png" width=50% >
 
-### Visual Studio Starten
-<img src="./AddFiles/Bearbeitet.PNG" width=50% >
+Nun wollen Wir eine Änderung in der Program.cs des ersten Projekts (**"1_Elementare_Syntax"**) vornehmen. 
+Schreiben Sie unter die Vorhandene Codezeile eine Übersetzung der Konsolenausgabe. 
 
-### Visual Studio Starten
+```csharp
+Console.WriteLine("Hello World");
+Console.WriteLine("Hallo Welt");
+```
+
+<img src="./AddFiles/Bearbeitet.png" width=50% >
+
+Nun klicken Sie in der Registerkarte auf
+
+1. Git-Änderungen
+2. Fügen Sie in die Commit-Box eine Beschreibung hinzu was Sie geändert haben. Nutzen Sie verben
+3. Commiten Sie Ihre Änderungen.
+
+Nun Können Sie im Browser schauen ob Ihre Änderung online zu sehen ist.
+
 <img src="./AddFiles/commit-lokal.png" width=50% >
 
-### Visual Studio Starten
+Wie Sie sicherlich gemerkt haben ist die zusätzliche Zeile nicht zu sehen. 
+Das liegt daran...
+
+Sie können Ihren Commit auf den Server pushen indem Sie den Button mit dem Pfeil nach oben anklicken. 
+Hinweis:
+Die 1 neben den Commits steht für ein commit der noch nicht gepsht wurde. 
+
+Nachdem Sie ihren Code gepusht haben können kontrollieren on er im Browser zu sehen ist. 
+
 <img src="./AddFiles/erster-push.png" width=50% >
 
-### Visual Studio Starten
+### Fetch und Pull
+
+Es kann natürlich auch sein das sie Änderungen online im Browser machen oder ein Teamkollege seine Änderungen über einen PullRequest auf den Server geladen hat. 
+Um diesen Code auf ihrem Lokalen zuladen, müssen sie den Code abrufen.
+
+Gehen Sie im Browser zu Ihrem Repository GrundlagenrepositoryCsharp und zum Verzeichnis 2_Konsolenausgabe, 
+Änderns Sie den Code folgendermaßen
+
+Entfernen Sie 
+```csharp
+Console.WriteLine("Fubar");
+```
+
+
+mit folgender Codezeile
+```csharp
+Console.WriteLine("foobar");
+```
+Vergessen Sie nicht den Code zu Commiten. 
+
 <img src="./AddFiles/browser-commit.png" width=50% >
 
-### Visual Studio Starten
+Um die Änderungen abzurfen öffnen Sie wieder die Registerkarte Git-Änderungen
+
 <img src="./AddFiles/fetch-pull.png" width=50% >
 
 ### Visual Studio Starten
